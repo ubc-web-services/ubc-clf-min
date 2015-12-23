@@ -1,0 +1,19 @@
+{
+  "name": "clf-full-width",
+  "version": "1.0.0",
+  "description": "Creating a minimal version of the CLF's CSS and JS (full-width version)",
+  "main": "sample.html",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-uncss": "^0.4.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James O'Toole",
+  "license": "ISC"
+}
