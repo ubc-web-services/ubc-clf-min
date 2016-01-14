@@ -19,10 +19,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Stylesheets -->
-<link href="//cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css" rel="stylesheet">
+<!-- our compressed version -->
+<link href="release/css/minimal-clf-7.0.4-bw.css" rel="stylesheet"> 
+<!-- our unaltered version -->
+<!--<link href="css/ubc-clf-full-bw.min.css" rel="stylesheet"> -->
 <link href="css/unit.css" rel="stylesheet">
 <!--[if lte IE 7]>
-<link href="//cdn.ubc.ca/clf/7.0.4/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="https://cdn.ubc.ca/clf/7.0.4/css/font-awesome-ie7.css" rel="stylesheet">
 <![endif]-->
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -37,7 +40,7 @@
 <link rel="apple-touch-icon-precomposed" href="//cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-57-precomposed.png">
 </head>
 <body class="full-width">
-    <!-- UBC Global Utility Menu -->
+    <!-- UBC Global Utility Menu  *** MODIFIED TO EXPAND BY DEFAULT SO STYLES ARE PARSED ***  -->
     <div class="collapse in expand" id="ubc7-global-menu">
         <div id="ubc7-search" class="expand">
         	<div class="container">
@@ -77,7 +80,7 @@
 	                <span class="ubc7-campus" id="ubc7-vancouver-campus">Vancouver campus</span>
 	            </div>
 	            <div id="ubc7-global-utility">
-	                <button type="button" data-toggle="collapse" data-target="#ubc7-global-menu"><span>UBC Search</span></button>
+	                <button type="button" data-toggle="collapse" data-target="#ubc7-global-menu"><span class="opened">UBC Search</span></button>
 	                <noscript><a id="ubc7-global-utility-no-script" href="http://www.ubc.ca/">UBC Search</a></noscript>
 	            </div>
 	        </div>
@@ -107,7 +110,8 @@
     <!-- End of UBC Unit Identifier -->
     <!-- UBC Unit Navigation -->
     <div id="ubc7-unit-menu" class="navbar expand" role="navigation">
-        <div class="navbar-inner expand">
+    &nbsp;
+        <!-- <div class="navbar-inner expand">
             <div class="container">
                 <div class="nav-collapse collapse" id="ubc7-unit-navigation">
                     <ul class="nav">
@@ -130,13 +134,14 @@
                             </div>
                         </li>
                     </ul>
-                </div><!-- /.nav-collapse -->
+                </div>
             </div>
-        </div><!-- /navbar-inner -->
+        </div> -->
     </div><!-- /navbar -->
     <!-- End of UBC Unit Navigation -->
     <div class="full-width-container">
 	    <!-- UBC Unit Breadcrumbs -->
+	    <!--
 	    <ul class="breadcrumb expand">
 	        <li>
 	            <a href="#">Faculty Name</a> <span class="divider">/</span>
@@ -146,14 +151,16 @@
 	        </li>
 	        <li class="active">Page Name</li>
 	    </ul>
+	    -->
 	    <!-- End of UBC Unit Breadcrumbs -->
 	    <!-- Content Area -->
 	    <div class="content expand" role="main">
-	    	
+	    	&nbsp;
 	    </div>
 	    <!-- End of Content Area -->
     </div>
     <!-- Footer Area Unit Menu - Mobile Only -->
+    <!--
     <div id="ubc7-unit-alternate-navigation" class="navbar expand visible-phone" role="navigation">
         <div class="navbar-inner expand">
             <div class="container">
@@ -178,9 +185,9 @@
                             </div>
                         </li>
                     </ul>
-                </div><!-- /.nav-collapse -->
+                </div>
             </div>
-        </div><!-- /navbar-inner -->
+        </div> -->
     </div><!-- /navbar -->
     <!-- End of Footer Area Unit Menu -->
     <footer id="ubc7-footer" class="expand" role="contentinfo">
