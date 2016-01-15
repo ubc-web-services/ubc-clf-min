@@ -6,17 +6,17 @@ module.exports = function(grunt) {
     uncss: {
       options: {
         report: 'gzip',
-        // ignore both of these selectors so neither is stripped by uncss regardless of which is in the markup
-        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus']
+        // ignore these selectors so none are stripped by uncss regardless of which is in the markup
+        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus', '.ubc7-single-element']
       },
       dist: {
         files: {
           // issue with uncss right now - https://github.com/addyosmani/grunt-uncss/issues/171
           // workaround - just comment all but one line, then run 'grunt', rinse, repeat
-          'uncompressed/css/minimal-clf-7.0.4.css': ['build.html']//,
+          //'uncompressed/css/minimal-clf-7.0.4.css': ['build.html']//,
           //'uncompressed/css/minimal-clf-7.0.4-bw.css': ['build-bw.html']//,
           //'uncompressed/css/minimal-clf-7.0.4-gw.css': ['build-gw.html']//,
-          //'uncompressed/css/minimal-clf-7.0.4-wg.css': ['build-wg.html']
+          'uncompressed/css/minimal-clf-7.0.4-wg.css': ['build-wg.html']
         }
       }
     },
@@ -27,9 +27,9 @@ module.exports = function(grunt) {
       target: {
         files: {
           //'release/css/minimal-clf-7.0.4.css': ['uncompressed/css/minimal-clf-7.0.4.css']//,
-          'release/css/minimal-clf-7.0.4-bw.css': ['uncompressed/css/minimal-clf-7.0.4-bw.css']//,
+          //'release/css/minimal-clf-7.0.4-bw.css': ['uncompressed/css/minimal-clf-7.0.4-bw.css']//,
           //'release/css/minimal-clf-7.0.4-gw.css': ['uncompressed/css/minimal-clf-7.0.4-gw.css']//,
-          //'release/css/minimal-clf-7.0.4-wg.css': ['uncompressed/css/minimal-clf-7.0.4-wg.css']
+          'release/css/minimal-clf-7.0.4-wg.css': ['uncompressed/css/minimal-clf-7.0.4-wg.css']
         }
       }
     }

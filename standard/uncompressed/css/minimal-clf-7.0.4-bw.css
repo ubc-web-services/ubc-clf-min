@@ -1,4 +1,4 @@
-/*** uncss> filename: css/ubc-clf-full-bw.min.css ***/
+/*** uncss> filename: original-css/ubc-clf-full-bw.min.css ***/
 
 /*!
  * Bootstrap v2.3.2
@@ -489,6 +489,10 @@ input.search-query {
   -moz-transition: height .35s ease;
   -o-transition: height .35s ease;
   transition: height .35s ease;
+}
+
+.collapse.in {
+  height: auto;
 }
 
 .btn {
@@ -1528,6 +1532,7 @@ header [class*="span"] {
 #ubc7-wordmark-block,
 #ubc7-global-utility button span,
 #ubc7-global-utility-no-script,
+#ubc7-okanagan-campus,
 #ubc7-vancouver-campus,
 #ubc7-signature a,
 #ubc7-ql-apom span,
@@ -1616,6 +1621,11 @@ header [class*="span"] {
   width: 135px;
 }
 
+#ubc7-okanagan-campus {
+  background-position: -1320px -165px;
+  background-repeat: no-repeat;
+}
+
 #ubc7-vancouver-campus {
   background-position: -1320px -122px;
   background-repeat: no-repeat;
@@ -1667,6 +1677,12 @@ header [class*="span"] {
 #ubc7-global-menu #ubc7-search button,
 #ubc7-global-menu #ubc7-global-header a {
   visibility: hidden;
+}
+
+#ubc7-global-menu.in #ubc7-search input,
+#ubc7-global-menu.in #ubc7-search button,
+#ubc7-global-menu.in #ubc7-global-header a {
+  visibility: visible!important;
 }
 
 #ubc7-search {
@@ -2338,6 +2354,10 @@ input.search-query,
     width: 170px;
   }
 
+  #ubc7-okanagan-campus {
+    background-position: -1320px -53px;
+  }
+
   #ubc7-vancouver-campus {
     background-position: -1320px -5px;
   }
@@ -2473,6 +2493,10 @@ input.search-query,
 
   #ubc7-vancouver-campus {
     background-position: -1319px -226px;
+  }
+
+  #ubc7-okanagan-campus {
+    background-position: -1319px -262px;
   }
 
   #ubc7-wordmark a {
@@ -2667,6 +2691,10 @@ input.search-query,
     font-size: 18px;
   }
 
+  #ubc7-okanagan-campus {
+    background-position: -1319px -329px;
+  }
+
   #ubc7-vancouver-campus {
     background-position: -1319px -301px;
   }
@@ -2718,6 +2746,7 @@ input.search-query,
 @media screen and (max-width: 319px) {
   #ubc7-wordmark-block,
   #ubc7-signature a,
+  #ubc7-okanagan-campus,
   #ubc7-vancouver-campus {
     background-size: 1290px!important;
   }
@@ -2734,6 +2763,10 @@ input.search-query,
     left: 30px;
   }
 
+  #ubc7-okanagan-campus {
+    background-position: -1135px -283px;
+  }
+
   #ubc7-vancouver-campus {
     background-position: -1135px -259px;
   }
@@ -2745,6 +2778,7 @@ input.search-query,
   #ubc7-wordmark-block,
   #ubc7-global-utility button span,
   #ubc7-global-utility-no-script,
+  #ubc7-okanagan-campus,
   #ubc7-vancouver-campus,
   #ubc7-signature a,
   #ubc7-ql-apom span,
@@ -2874,23 +2908,4 @@ input.search-query,
   .nav a:link:after {
     content: none;
   }
-}
-
-/*** uncss> filename: css/unit.css ***/
-
-/* Unit editable CSS */
-
-/** Unit Bar background color **/
-
-#ubc7-unit {
-  background: #2F5D7C;
-  /* For White on Blue, and Grey on White */
-  /* background: #002145; */
-  /* For Blue on White, and White on Grey */
-}
-
-/** Social Icons **/
-
-#ubc7-unit-social-icons i {
-  color: #002145;
 }
