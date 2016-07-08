@@ -60,16 +60,13 @@ module.exports = function(grunt) {
       options: {
         report: 'gzip',
         // ignore these selectors so none are stripped by uncss regardless of which is in the markup
-        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus', '#ubc7-centennial', '.ubc7-single-element a', '#ubc7-global-utility button span.opened', '.open>.dropdown-menu']
+        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus', '#ubc7-centennial', '#ubc7-centennial a span', '.ubc7-single-element a', '#ubc7-global-utility button span.opened', '.open>.dropdown-menu', '.nav-collapse .open>.dropdown-menu','#ubc7-global-header', '#ubc7-global-header .row-fluid', '#ubc7-global-header ul', '#ubc7-global-header li', '#ubc7-global-header a', '#ubc7-ql-apom span', '#ubc7-ql-mobile span',  '.row-fluid .span8', '.row-fluid .offset2', '.row-fluid .offset2:first-child', '#ubc7-unit-menu .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-unit-alternate-navigation .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-global-menu #ubc7-global-header a', '#ubc7-global-menu.in #ubc7-global-header a', '#ubc7-global-header .row-fluid .offset2:first-child', '#ubc7-global-header .span8']
       },
       dist: {
         files: {
-          // issue with uncss right now - https://github.com/addyosmani/grunt-uncss/issues/171
-          // workaround - just comment all but one line, then run 'grunt', rinse, repeat
-          /* Seems fixed? June 17,16 */
-          //'uncompressed/css/minimal-clf-7.0.4.css': ['build.html']//,
-          //'uncompressed/css/minimal-clf-7.0.4-bw.css': ['build-bw.html']//,
-          //'uncompressed/css/minimal-clf-7.0.4-gw.css': ['build-gw.html']//,
+          'uncompressed/css/minimal-clf-7.0.4.css': ['build.html'],
+          'uncompressed/css/minimal-clf-7.0.4-bw.css': ['build-bw.html'],
+          'uncompressed/css/minimal-clf-7.0.4-gw.css': ['build-gw.html'],
           'uncompressed/css/minimal-clf-7.0.4-wg.css': ['build-wg.html']
         }
       }
