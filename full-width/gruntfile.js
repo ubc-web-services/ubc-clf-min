@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       options: {
         report: 'gzip',
         // ignore these selectors so none are stripped by uncss regardless of which is in the markup
-        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus', '#ubc7-centennial', '#ubc7-centennial a span', '.ubc7-single-element a', '#ubc7-global-utility button span.opened', '.open>.dropdown-menu', '.nav-collapse .open>.dropdown-menu','#ubc7-global-header', '#ubc7-global-header .row-fluid', '#ubc7-global-header ul', '#ubc7-global-header li', '#ubc7-global-header a', '#ubc7-ql-apom span', '#ubc7-ql-mobile span',  '.row-fluid .span8', '.row-fluid .offset2', '.row-fluid .offset2:first-child', '#ubc7-unit-menu .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-unit-alternate-navigation .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-global-menu #ubc7-global-header a', '#ubc7-global-menu.in #ubc7-global-header a', '#ubc7-global-header .row-fluid .offset2:first-child', '#ubc7-global-header .span8']
+        ignore: ['#ubc7-okanagan-campus', '#ubc7-vancouver-campus', '#ubc7-centennial', '#ubc7-centennial a span', '.ubc7-single-element a', '#ubc7-global-utility button span.opened', '.open>.dropdown-menu', '.nav-collapse .open>.dropdown-menu','#ubc7-global-header', '#ubc7-global-header .row-fluid', '#ubc7-global-header ul', '#ubc7-global-header li', '#ubc7-global-header a', '#ubc7-ql-apom span', '#ubc7-ql-mobile span',  '.row-fluid .span8', '.row-fluid .offset2', '.row-fluid .offset2:first-child', '#ubc7-unit-menu .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-unit-alternate-navigation .dropdown .btn-group.open button .ubc7-arrow', '#ubc7-global-menu #ubc7-global-header a', '#ubc7-global-menu.in #ubc7-global-header a', '#ubc7-global-header .row-fluid .offset2:first-child', '#ubc7-global-header .span8', '.row-fluid .span6', 'footer h3', 'footer h4', 'h3', 'h4']
       },
       dist: {
         files: {
@@ -71,6 +71,20 @@ module.exports = function(grunt) {
         }
       }
     },
+// -----------------------------------------------------------------------------
+// COMBINE MEDIA QUERIES TASKS
+//
+// -----------------------------------------------------------------------------    
+    cmq: {
+        options: {
+          log: false
+        },
+        your_target: {
+          files: {
+            'release/cmq': ['uncompressed/css/*.css']
+          }
+        }
+      },
 // -----------------------------------------------------------------------------
 // CSSMIN TASKS
 //
@@ -84,7 +98,11 @@ module.exports = function(grunt) {
           'release/css/minimal-clf-7.0.4.css': ['uncompressed/css/minimal-clf-7.0.4.css'],
           'release/css/minimal-clf-7.0.4-bw.css': ['uncompressed/css/minimal-clf-7.0.4-bw.css'],
           'release/css/minimal-clf-7.0.4-gw.css': ['uncompressed/css/minimal-clf-7.0.4-gw.css'],
-          'release/css/minimal-clf-7.0.4-wg.css': ['uncompressed/css/minimal-clf-7.0.4-wg.css']
+          'release/css/minimal-clf-7.0.4-wg.css': ['uncompressed/css/minimal-clf-7.0.4-wg.css'],
+          'release/css/cmq/minimal-clf-7.0.4.css': ['release/cmq/minimal-clf-7.0.4.css'],
+          'release/css/cmq/minimal-clf-7.0.4-bw.css': ['release/cmq/minimal-clf-7.0.4-bw.css'],
+          'release/css/cmq/minimal-clf-7.0.4-gw.css': ['release/cmq/minimal-clf-7.0.4-gw.css'],
+          'release/css/cmq/minimal-clf-7.0.4-wg.css': ['release/cmq/minimal-clf-7.0.4-wg.css']
         }
       }
     },
@@ -148,6 +166,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-criticalcss');
   grunt.loadNpmTasks('grunt-lesslint');
+  grunt.loadNpmTasks('grunt-combine-media-queries');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
@@ -155,6 +174,7 @@ module.exports = function(grunt) {
   // Default task(s) - we bundle the tasks here with easily memorable names. Default is run when nothing else it specified [ie. 'grunt' as opposed to 'grunt lint'].
   grunt.registerTask('default', ['browserSync', 'watch']);
   grunt.registerTask('optimize', ['uncss', 'cssmin']);
+  grunt.registerTask('remove-mq', ['cmq', 'cssmin']);
   grunt.registerTask('lint', ['csslint', 'lesslint']);
 
 };
