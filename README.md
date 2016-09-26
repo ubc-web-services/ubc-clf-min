@@ -1,6 +1,6 @@
 # ubc-clf-min
 ### What is this?
-This is a tool to create a build of the standard CLF distribution with all unused css removed. 
+This is a tool to create a build of the standard CLF distribution with all unused css removed. (http://clf.ubc.ca)
 
 ### Do I have to install anything?
 No, you should just use the CSS files located in full-width > release > css or standard > release > css.
