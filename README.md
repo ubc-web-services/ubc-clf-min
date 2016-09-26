@@ -1,7 +1,31 @@
 # ubc-clf-min
-A version of the standard CLF distribution with all unused css removed from a basic page template.
+## What is this?
+This is a tool to create a build of the standard CLF distribution with all unused css removed. 
 
-## Usage
+## Do I have to install anything?
+No, you should just use the CSS files located in full-width > release > css or standard > release > css.
+
+## Who is it for?
+It's for developers building a UBC CLF website, who don't want to include the entire Bootstrap 2 CSS framework. 
+
+## Can I use it on my existing UBC website with CLF version 7.x?
+You can, but if you're relying on styling or layout from the default CLF version, these will most likely break.
+
+## Why use it then?
+You want a clean slate of CSS with just the bare minimum required by the UBC CLF.
+
+## Can I get it from the CDN?
+-- yes, details coming soon --
+
+## File Structure
+
+- full-width -- full and fluid width CLF files
+- standard -- fixed width CLF files
+-- original-css -- the unmodified CSS files, including the entire framework
+-- release/css -- the compressed CSS files with unused classes removed
+-- uncompressed/css -- the uncompressed CSS files with unused classes removed
+
+## Working with this repo
 ### 1. Install Node.js and Grunt 
 1. If node.js is not installed, https://docs.npmjs.com/getting-started/installing-node
 2. Update Node Pakage Manager (npm) by running: 
