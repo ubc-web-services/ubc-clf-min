@@ -1,23 +1,23 @@
 # ubc-clf-min
-## What is this?
+### What is this?
 This is a tool to create a build of the standard CLF distribution with all unused css removed. 
 
-## Do I have to install anything?
+### Do I have to install anything?
 No, you should just use the CSS files located in full-width > release > css or standard > release > css.
 
-## Who is it for?
+### Who is it for?
 It's for developers building a UBC CLF website, who don't want to include the entire Bootstrap 2 CSS framework. 
 
-## Can I use it on my existing UBC website with CLF version 7.x?
+### Can I use it on my existing UBC website with CLF version 7.x?
 You can, but if you're relying on styling or layout from the default CLF version, these will most likely break.
 
-## Why use it then?
+### Why use it then?
 You want a clean slate of CSS with just the bare minimum required by the UBC CLF.
 
-## Can I get it from the CDN?
+### Can I get it from the CDN?
 -- yes, details coming soon --
 
-## File Structure
+### File Structure
 
 - full-width -- full and fluid width CLF files
 - standard -- fixed width CLF files
