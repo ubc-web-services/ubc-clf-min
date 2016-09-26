@@ -19,11 +19,11 @@ You want a clean slate of CSS with just the bare minimum required by the UBC CLF
 
 ### File Structure
 
-- full-width -- full and fluid width CLF files
-- standard -- fixed width CLF files
-    - original-css -- the unmodified CSS files, including the entire framework
-    - release/css -- the compressed CSS files with unused classes removed
-    - uncompressed/css -- the uncompressed CSS files with unused classes removed
+- full-width -- full and fluid width CLF file package
+- standard -- fixed width CLF file package
+- [package]/original-css -- the unmodified CSS files, including the entire framework
+- [package]/release/css -- the compressed CSS files with unused classes removed
+- [package]/uncompressed/css -- the uncompressed CSS files with unused classes removed
 
 
 
