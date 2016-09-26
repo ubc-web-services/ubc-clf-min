@@ -84,6 +84,15 @@ button {
 @page {
     margin: .5cm;
 }
+
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
 body {
@@ -201,6 +210,11 @@ a:focus {
   *width: 57.39361702127659%;
 }
 
+.row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+
 .row-fluid .span5 {
   width: 40.42553191489362%;
   *width: 40.37234042553192%;
@@ -245,6 +259,28 @@ a:focus {
 
 strong {
   font-weight: bold;
+}
+
+h3,
+h4 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h3 {
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24.5px;
+}
+
+h4 {
+  font-size: 17.5px;
 }
 
 ul {
@@ -350,19 +386,6 @@ input.search-query {
   margin-bottom: 0;
   vertical-align: middle;
   *zoom: 1;
-}
-
-[class^="icon-"] {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-top: 1px;
-  *margin-right: .3em;
-  line-height: 14px;
-  vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
-  background-position: 14px 14px;
-  background-repeat: no-repeat;
 }
 
 .dropdown {
@@ -935,6 +958,11 @@ input[type="submit"].btn::-moz-focus-inner {
     *width: 57.21176577559556%;
   }
 
+  .row-fluid .span6 {
+    width: 48.717948717948715%;
+    *width: 48.664757228587014%;
+  }
+
   .row-fluid .span5 {
     width: 40.17094017094017%;
     *width: 40.11774868157847%;
@@ -1059,6 +1087,11 @@ input[type="submit"].btn::-moz-focus-inner {
   .row-fluid .span7 {
     width: 57.18232044198895%;
     *width: 57.12912895262725%;
+  }
+
+  .row-fluid .span6 {
+    width: 48.61878453038674%;
+    *width: 48.56559304102504%;
   }
 
   .row-fluid .span5 {
@@ -1266,46 +1299,6 @@ input[type="submit"].btn::-moz-focus-inner {
   font-style: normal;
 }
 
-[class^="icon-"] {
-  font-family: FontAwesome;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-}
-
-[class^="icon-"]:before {
-  text-decoration: inherit;
-  display: inline-block;
-  cursor: default;
-  speak: none;
-}
-
-a [class^="icon-"] {
-  display: inline;
-}
-
-[class^="icon-"] {
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: normal;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
-  margin-top: 0;
-}
-
-.icon-twitter-sign:before {
-  content: "\f081";
-}
-
-.icon-facebook-sign:before {
-  content: "\f082";
-}
-
 body {
   background: #ccc;
   color: #222;
@@ -1437,6 +1430,26 @@ a:focus,
 a:active {
   color: #2f5d7c;
   text-decoration: none;
+}
+
+h3,
+h4 {
+  color: #002145;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 ul {
@@ -2013,6 +2026,20 @@ footer {
   text-decoration: underline;
 }
 
+footer h3 {
+  color: #fff;
+  font-size: 110%;
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 100%;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
 #ubc7-unit-footer {
   background: #fff;
   border-top: 1px solid #D7E0E7;
@@ -2077,17 +2104,6 @@ footer .ubc7-back-to-top {
 #ubc7-minimal-footer .divider {
   color: #ccc;
   padding: 0 5px 0 3px;
-}
-
-#ubc7-unit-social-icons a {
-  text-decoration: none;
-}
-
-#ubc7-unit-social-icons i {
-  color: #002145;
-  cursor: pointer;
-  font-size: 32px;
-  line-height: 32px;
 }
 
 input[type="text"],
@@ -2791,6 +2807,16 @@ input.search-query,
   a:link:after {
     content: " (" attr(href) ") ";
     padding-left: 10px;
+  }
+
+  h3 {
+    font-size: 14pt;
+    color: #000;
+  }
+
+  h4 {
+    font-size: 12pt;
+    color: #000;
   }
 
   #ubc7-unit a:link:after {
