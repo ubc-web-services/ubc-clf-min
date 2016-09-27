@@ -14,6 +14,12 @@ You can, but if you're relying on styling or layout from the default CLF version
 ### Why use it then?
 You want a clean slate of CSS with just the bare minimum required by the UBC CLF.
 
+## What's included?
+Only css required for the 'required' CLF elements and the primary navigation.
+
+## What's not included?
+Everything else, but most importantly, the full grid system.
+
 ### Can I get it from the CDN?
 -- yes, details coming soon --
 
