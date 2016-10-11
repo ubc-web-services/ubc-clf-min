@@ -88,6 +88,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+// -----------------------------------------------------------------------------
+// CSSNANO TASKS
+//
+// -----------------------------------------------------------------------------    
+    cssnano: {
+      options: {
+        sourcemap: false,
+        discardComments: {
+          removeAll: true
+        }
+      },
+      dist: {
+        files: {
+          'release/optimized/minimal-clf-7.0.4.css': ['release/css/minimal-clf-7.0.4.css'],
+          'release/optimized/minimal-clf-7.0.4-bw.css': ['release/css/minimal-clf-7.0.4-bw.css'],
+          'release/optimized/minimal-clf-7.0.4-gw.css': ['release/css/minimal-clf-7.0.4-gw.css'],
+          'release/optimized/minimal-clf-7.0.4-wg.css': ['release/css/minimal-clf-7.0.4-wg.css']
+        }
+      }
+    },
 // -----------------------------------------------------------------------------
 // CRITICAL CSS TASKS (generate critical css for inlining)
 //
@@ -151,10 +172,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-cssnano');
 
   // Default task(s) - we bundle the tasks here with easily memorable names. Default is run when nothing else it specified [ie. 'grunt' as opposed to 'grunt lint'].
   grunt.registerTask('default', ['browserSync', 'watch']);
   grunt.registerTask('optimize', ['uncss', 'cssmin']);
   grunt.registerTask('lint', ['csslint', 'lesslint']);
+  grunt.registerTask('nano', ['cssnano']);
 
 };

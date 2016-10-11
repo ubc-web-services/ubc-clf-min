@@ -11,6 +11,7 @@
     "grunt-contrib-imagemin": "~1.0",
     "grunt-contrib-watch": "~1.0",
     "grunt-criticalcss": "~1.0",
+    "grunt-cssnano": "^2.1.0",
     "grunt-lesslint": "~3.2",
     "grunt-uncss": "~0.5"
   },
