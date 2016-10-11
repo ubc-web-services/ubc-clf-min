@@ -3,7 +3,7 @@
 This is a tool to create a build of the standard CLF distribution with all unused css removed. (http://clf.ubc.ca)
 
 ### Do I have to install anything?
-No, you should just use the CSS files located in full-width > release > css or standard > release > css.
+No, you should just use the CSS files located in full-width > release > optimized or standard > release > optimized.
 
 ### Who is it for?
 It's for developers building a UBC CLF website, who don't want to include the entire Bootstrap 2 CSS framework. 
@@ -61,8 +61,10 @@ The other optional tasks are
 4. lesslint
 5. csslint
 6. imagemin
-7. optimize (runs uncss and cssmin)
-8. lint (runs csslint and lesslint)
+7. cssnano
+8. optimize (runs uncss and cssmin)
+9. lint (runs csslint and lesslint)
+10. nano (runs cssnano)
 
 ### Tasks
 #### Uncss
@@ -84,3 +86,7 @@ https://www.npmjs.com/package/grunt-contrib-csslint
 
 #### Imagemin
 https://www.npmjs.com/package/grunt-contrib-imagemin
+
+#### CSSNano
+https://www.npmjs.com/package/grunt-cssnano
+This task should be run last. It's currently parsing the release/css files and doing some additional tasks, including removing the Fontawesome @font-face rule. 
