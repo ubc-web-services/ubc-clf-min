@@ -29,8 +29,10 @@ Everything else, but most importantly, the full grid system.
 - standard -- fixed width CLF file package
 - [package]/original-css -- the unmodified CSS files, including the entire framework
 - [package]/release/css -- the compressed CSS files with unused classes removed
+- [package]/release/no-fontawesome -- the **original** CSS files with Fontawesome removed
 - [package]/release/optimized -- the **release** CSS files with Fontawesome removed
 - [package]/uncompressed/css -- the uncompressed CSS files with unused classes removed
+
 
 
 
