@@ -9,19 +9,30 @@ No, you should just use the CSS files located in full-width > release > optimize
 It's for developers building a UBC CLF website, who don't want to include the entire Bootstrap 2 CSS framework. 
 
 ### Can I use it on my existing UBC website with CLF version 7.x?
-You can, but if you're relying on styling or layout from the default CLF version, these will most likely break.
+You can, but if you're relying on styling or layout from the default CLF version, these may break.
 
 ### Why use it then?
 You want a clean slate of CSS with just the bare minimum required by the UBC CLF.
 
 ## What's included?
-Only css required for the 'required' CLF elements and the primary navigation.
+Only css required for the 'required' CLF elements and the primary navigation, plus the Bootstrap 2 Grid system (span and offset classes). These have been replaced from alpha versions becuase the savings wasn't significant, but the potential problems were :)
 
 ## What's not included?
-Everything else, but most importantly, the full grid system.
+Everything else.
 
 ### Can I get it from the CDN?
--- yes, details coming soon --
+YES!
+**Fixed width**
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-bw.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-gw.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-wg.css
+ 
+**Full width**
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-bw.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-gw.css
+//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-wg.css
 
 ### File Structure
 
@@ -30,7 +41,7 @@ Everything else, but most importantly, the full grid system.
 - [package]/original-css -- the unmodified CSS files, including the entire framework
 - [package]/release/css -- the compressed CSS files with unused classes removed
 - [package]/release/no-fontawesome -- the **original** CSS files with Fontawesome removed
-- [package]/release/optimized -- the **release** CSS files with Fontawesome removed
+- [package]/release/optimized -- the minimal **release** CSS files with Fontawesome removed
 - [package]/uncompressed/css -- the uncompressed CSS files with unused classes removed
 
 
