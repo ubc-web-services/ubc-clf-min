@@ -23,16 +23,18 @@ Everything else.
 ### Can I get it from the CDN?
 YES!
 **Fixed width**
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-bw.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-gw.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-wg.css
+
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-bw.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-gw.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-7.0.4-wg.css
  
 **Full width**
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-bw.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-gw.css
-//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-wg.css
+
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-bw.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-gw.css
+- //cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-wg.css
 
 ### File Structure
 
