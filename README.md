@@ -38,11 +38,11 @@ YES!
 
 ### File Structure
 
+- complete-clf-no-fontawesome -- the **original** full package CSS files with only Fontawesome removed
 - full-width -- full and fluid width CLF file package
 - standard -- fixed width CLF file package
 - [package]/original-css -- the unmodified CSS files, including the entire framework
 - [package]/release/css -- the compressed CSS files with unused classes removed
-- [package]/release/no-fontawesome -- the **original** CSS files with Fontawesome removed
 - [package]/release/optimized -- the minimal **release** CSS files with Fontawesome removed
 - [package]/uncompressed/css -- the uncompressed CSS files with unused classes removed
 
